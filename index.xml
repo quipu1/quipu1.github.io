@@ -5,6 +5,16 @@
         <link>https://quipu1.github.io/</link>
         <description>Recent content on RUBI</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="https://quipu1.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <language>en-us</language>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://quipu1.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Rubi</title>
+        <link>https://quipu1.github.io/p/rubi/</link>
+        <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://quipu1.github.io/p/rubi/</guid>
+        <description>&lt;p&gt;dddd&lt;/p&gt;
+</description>
+        </item>
+        
     </channel>
 </rss>
