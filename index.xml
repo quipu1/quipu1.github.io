@@ -6,6 +6,85 @@
         <description>Recent content on RUBI</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 12 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://quipu1.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://quipu1.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>5097. 회전</title>
+        <link>https://quipu1.github.io/p/5097.-%ED%9A%8C%EC%A0%84/</link>
+        <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://quipu1.github.io/p/5097.-%ED%9A%8C%EC%A0%84/</guid>
+        <description>&lt;img src="https://quipu1.github.io/p/5097.-%ED%9A%8C%EC%A0%84/algo.png" alt="Featured image of post 5097. 회전" /&gt;&lt;h3 id=&#34;link&#34;&gt;LINK&lt;/h3&gt;
+&lt;p&gt;👉   &lt;a class=&#34;link&#34; href=&#34;https://swexpertacademy.com/main/learn/course/subjectDetail.do?subjectId=AWOVIoJqqfYDFAWg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PROBLEM - Clink here!&lt;/a&gt;   👈&lt;/p&gt;
+&lt;p&gt;[ ROUTE ] SWEA -&amp;gt; Learn -&amp;gt; Course -&amp;gt; 파이썬 SW문제해결 기본 Queue -&amp;gt; 5차시&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;문제-요약&#34;&gt;문제 요약&lt;/h3&gt;
+&lt;p&gt;주어진 횟수만큼 동작했을 때, 수열의 맨 앞에 있는 수는 무엇인가?&lt;/p&gt;
+&lt;p&gt;동작 : 수열의 맨 앞의 수를 맨 뒤로 보낸다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;문제-풀이&#34;&gt;문제 풀이&lt;/h3&gt;
+&lt;p&gt;📌 Input&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;3
+3 10
+5527 731 31274
+5 12
+18140 14618 18641 22536 23097
+10 23
+17236 31594 29094 2412 4316 5044 28515 24737 11578 7907
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;📌 Solving&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# T = 테스트 케이스 수&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;T&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt;
+
+&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;tc&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+
+	&lt;span class=&#34;c1&#34;&gt;# N = 숫자의 개수&lt;/span&gt;
+	&lt;span class=&#34;c1&#34;&gt;# M = 뒤로 보내는 작업 횟수&lt;/span&gt;
+	&lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;M&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;map&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;split&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt;
+
+	&lt;span class=&#34;c1&#34;&gt;# array = 주어진 수열&lt;/span&gt;
+	&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;map&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;split&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()))&lt;/span&gt;
+
+	&lt;span class=&#34;c1&#34;&gt;# 현재까지 뒤로 보내는 작업을 한 횟수&lt;/span&gt;
+	&lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+
+	&lt;span class=&#34;c1&#34;&gt;# 작업을 M번 할 때까지 반복&lt;/span&gt;
+	&lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;M&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+		&lt;span class=&#34;c1&#34;&gt;# array.pop(0)을 통해서 배열의 맨 앞의 원소를 빼내고 값을 가져온다.&lt;/span&gt;
+		&lt;span class=&#34;c1&#34;&gt;# pop은 값을 리스트에서 삭제할뿐만 아니라 해당 값을 return한다.&lt;/span&gt;
+		&lt;span class=&#34;c1&#34;&gt;# 가져온 값을 다시 배열의 맨 뒤로 append 해준다.&lt;/span&gt;
+		&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pop&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+		&lt;span class=&#34;c1&#34;&gt;# 24번 줄에서 작업을 한 번 해줬기 때문에 현재 작업수를 1회 더해준다.&lt;/span&gt;
+		&lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+
+	&lt;span class=&#34;c1&#34;&gt;# 출력으로 현재 배열의 맨 앞의 수를 꺼낸다.&lt;/span&gt;
+	&lt;span class=&#34;k&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;#{} {}&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;📌  Output&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mark&#34; data-lang=&#34;mark&#34;&gt;#1 731
+#2 18641
+#3 2412
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h3 id=&#34;내-생각&#34;&gt;내 생각&lt;/h3&gt;
+&lt;p&gt;python에서 제공하는 리스트 메서드인 &lt;code&gt;pop()&lt;/code&gt;로 간단하게 풀 수 있었다.&lt;/p&gt;
+&lt;p&gt;위의 풀이 외에도 규칙을 찾아 다른 풀이를 쓸 수 있다.&lt;/p&gt;
+&lt;p&gt;예를 들면 횟수 : 10 / 배열 : [ 1, 2, 3 ]이 주어졌을 때,&lt;/p&gt;
+&lt;p&gt;[동작 횟수-맨 앞의 수]를 순서대로 적는다면 1회-2 / 2회-3 / 3회-1 &amp;hellip;으로 이후에는 앞의 과정의 반복이다.&lt;/p&gt;
+&lt;p&gt;이런 규칙성을 통해 배열의 크기로 동작 횟수를 나눠서 나온 나머지로 간단하게 답을 찾을 수 있다.&lt;/p&gt;
+&lt;p&gt;이 경우에는 배열의 크기는 &lt;code&gt;3&lt;/code&gt;이므로 나머지는 &lt;code&gt;1&lt;/code&gt;이다.&lt;/p&gt;
+&lt;p&gt;따라서, 답은 1회에 나왔던 &lt;code&gt;2&lt;/code&gt;가 된다.&lt;/p&gt;
+&lt;p&gt;아래의 코드는 앞서 설명한 규칙을 적용한 풀이이다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;T&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt;
+
+&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;tc&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+
+	&lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;M&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;map&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;split&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt;
+
+	&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;map&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;split&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()))&lt;/span&gt;
+
+	&lt;span class=&#34;k&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;#{} {}&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;M&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;알고리즘을 정말 정말 정말 싫어하지만 이처럼 하나의 문제에서 여러 풀이과정이 나올 수 있다는 점은 흥미롭다.&lt;/p&gt;
+&lt;p&gt;여러 시각으로 문제를 보는 감각을 길러 D4 이상의 알고리즘 문제까지 다 부숴 버리고 싶다.&lt;/p&gt;
+&lt;p&gt;파이팅&lt;/p&gt;
+</description>
+        </item>
+        
     </channel>
 </rss>

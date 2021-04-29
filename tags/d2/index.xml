@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SWEA on RUBI</title>
-    <link>https://quipu1.github.io/categories/swea/</link>
-    <description>Recent content in SWEA on RUBI</description>
+    <title>d2 on RUBI</title>
+    <link>https://quipu1.github.io/tags/d2/</link>
+    <description>Recent content in d2 on RUBI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://quipu1.github.io/categories/swea/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://quipu1.github.io/tags/d2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>5097. 회전</title>
       <link>https://quipu1.github.io/p/5097.-%ED%9A%8C%EC%A0%84/</link>

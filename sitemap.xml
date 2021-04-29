@@ -2,19 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://quipu1.github.io/p/5097.-%ED%9A%8C%EC%A0%84/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://quipu1.github.io/about/</loc>
-    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://quipu1.github.io/tags/algorithm/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://quipu1.github.io/categories/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://quipu1.github.io/tags/d2/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://quipu1.github.io/page/</loc>
-    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://quipu1.github.io/post/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://quipu1.github.io/tags/python/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://quipu1.github.io/</loc>
-    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://quipu1.github.io/categories/swea/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://quipu1.github.io/tags/swea/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://quipu1.github.io/tags/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://quipu1.github.io/archive/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://quipu1.github.io/categories/</loc>
   </url><url>
     <loc>https://quipu1.github.io/categories/django/</loc>
   </url><url>
@@ -23,9 +48,5 @@
     <loc>https://quipu1.github.io/categories/python/</loc>
   </url><url>
     <loc>https://quipu1.github.io/search/</loc>
-  </url><url>
-    <loc>https://quipu1.github.io/categories/swea/</loc>
-  </url><url>
-    <loc>https://quipu1.github.io/tags/</loc>
   </url>
 </urlset>

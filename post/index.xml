@@ -6,14 +6,19 @@
     <description>Recent content in Posts on RUBI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://quipu1.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://quipu1.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Rubi</title>
-      <link>https://quipu1.github.io/p/rubi/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <title>5097. 회전</title>
+      <link>https://quipu1.github.io/p/5097.-%ED%9A%8C%EC%A0%84/</link>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://quipu1.github.io/p/rubi/</guid>
-      <description>dddd</description>
+      <guid>https://quipu1.github.io/p/5097.-%ED%9A%8C%EC%A0%84/</guid>
+      <description>LINK 👉 PROBLEM - Clink here! 👈
+[ ROUTE ] SWEA -&amp;gt; Learn -&amp;gt; Course -&amp;gt; 파이썬 SW문제해결 기본 Queue -&amp;gt; 5차시
+ 문제 요약 주어진 횟수만큼 동작했을 때, 수열의 맨 앞에 있는 수는 무엇인가?
+동작 : 수열의 맨 앞의 수를 맨 뒤로 보낸다.
+ 문제 풀이 📌 Input
+33 105527 731 312745 1218140 14618 18641 22536 2309710 2317236 31594 29094 2412 4316 5044 28515 24737 11578 7907📌 Solving</description>
     </item>
     
   </channel>
