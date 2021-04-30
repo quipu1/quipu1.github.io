@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>K-MOOC on RUBI</title>
-    <link>https://quipu1.github.io/categories/k-mooc/</link>
-    <description>Recent content in K-MOOC on RUBI</description>
+    <title>k-mooc on RUBI</title>
+    <link>https://quipu1.github.io/tags/k-mooc/</link>
+    <description>Recent content in k-mooc on RUBI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://quipu1.github.io/categories/k-mooc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://quipu1.github.io/tags/k-mooc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>빅데이터와 머신러닝 소프트웨어 1-1</title>
       <link>https://quipu1.github.io/p/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%99%80-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-1-1/</link>

@@ -6,7 +6,88 @@
         <description>Recent content on RUBI</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://quipu1.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 30 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://quipu1.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>빅데이터와 머신러닝 소프트웨어 1-1</title>
+        <link>https://quipu1.github.io/p/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%99%80-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-1-1/</link>
+        <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://quipu1.github.io/p/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%99%80-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-1-1/</guid>
+        <description>&lt;img src="https://quipu1.github.io/p/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%99%80-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-1-1/algo.png" alt="Featured image of post 빅데이터와 머신러닝 소프트웨어 1-1" /&gt;&lt;hr&gt;
+&lt;h3 id=&#34;link&#34;&gt;LINK&lt;/h3&gt;
+&lt;p&gt;👉   &lt;a class=&#34;link&#34; href=&#34;http://www.kmooc.kr/courses/course-v1:SNUk&amp;#43;SNU051_011k&amp;#43;2021_T1/about&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LECTURE - Clink here!&lt;/a&gt;   👈&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;데이터-사이언스-소개-및-빅데이터-특성&#34;&gt;데이터 사이언스 소개 및 빅데이터 특성&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;[ 데이터 사이언스 ]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;데이터로부터 인사이트를 뽑는 과정&lt;/p&gt;
+&lt;p&gt;데이터로부터 인사이트를 얻기 위한 과학적인 방법, 알고리즘, 시스템에 대한 것&lt;/p&gt;
+&lt;p&gt;많은 데이터(Data) + 그 데이터를 분석하는 다양한 알고리즘 (Algorithm)&lt;/p&gt;
+&lt;p&gt;-&amp;gt; 데이터와 알고리즘을 입력으로 해서 분석하는 툴 (Tool-빅데이터, 머신러닝)&lt;/p&gt;
+&lt;p&gt;-&amp;gt; 인사이트&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;데이터-사이언스-응용&#34;&gt;데이터 사이언스 응용&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;1. Business Report&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;예시&lt;/p&gt;
+&lt;p&gt;(1) 올해 고객들이 산 상품 중 최대로 많이 팔린 상품 10가지 분석&lt;/p&gt;
+&lt;p&gt;(2) 사용자들이 어떤 프로모션에 잘 반응해서 세일즈가 올라가는지 분석&lt;/p&gt;
+&lt;p&gt;-&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;2. Temporal Analysis (시차에 따른 분석)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;예시&lt;/p&gt;
+&lt;p&gt;(1) SNS에서 좋아요가 얼마나 많이 공유되는지 시간대별 분석&lt;/p&gt;
+&lt;p&gt;(2) 길에서 해당 시간마다 얼마만큼의 자동차가 이동하는지 분석&lt;/p&gt;
+&lt;p&gt;(3) 공장에서의 많은 데이터 중 특정 데이터에서 기계에 문제가 있는지 검출&lt;/p&gt;
+&lt;p&gt;-&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;3. Recommendation (추천 시스템)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;예시&lt;/p&gt;
+&lt;p&gt;(1) 넷플릭스의 영화 추천&lt;/p&gt;
+&lt;p&gt;(2) 아마존 등의 회사에서 사용자가 구매할 물건 추천&lt;/p&gt;
+&lt;p&gt;(3) 뉴스 사이트, 정보 사이트에서 콘텐츠 선호도를 통해 개인화된 정보 추천&lt;/p&gt;
+&lt;p&gt;-&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;4. Sentiment Analysis&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;전통적인 추천뿐만 아니라 사용자가 어떤 감정을 가지고 있는지, 어떤 생각을 가지고 있는지를 분석하는 방법&lt;/p&gt;
+&lt;p&gt;예시&lt;/p&gt;
+&lt;p&gt;(1) 글이 긍정적인지, 부정적인지, 중립적인 글인지 분석&lt;/p&gt;
+&lt;p&gt;(2) 사용자가 슬픈 상태인지, 화난 상태인지 등 감정 분석&lt;/p&gt;
+&lt;p&gt;-&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;5. Graph Analysis (그래프 분석)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;그래프는  여러 개의 vertex와 그 vertex가 연결된 edge로 구성&lt;/p&gt;
+&lt;p&gt;예시&lt;/p&gt;
+&lt;p&gt;(1) 웹 그래프&lt;/p&gt;
+&lt;p&gt;​	웹에서 웹페이지는 vertex, 웹페이지에서 웹페이지로 연결될 때의 링크들은 edge&lt;/p&gt;
+&lt;p&gt;​	어떤 웹페이지가 더 중요하고 사람들이 좋게 생각하는 지 분석&lt;/p&gt;
+&lt;p&gt;(2) SNS에서 친구관계를 그래프로 표현해 새로운 친구 추천&lt;/p&gt;
+&lt;p&gt;-&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;6. Image / Audio / Video Anlaysis&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;텍스트 데이터가 아닌 이미지, 오디오, 비디오 데이터 분석&lt;/p&gt;
+&lt;p&gt;예시&lt;/p&gt;
+&lt;p&gt;(1) 사진들에서 관련된 객체들을 뽑아내 전부 표현&lt;/p&gt;
+&lt;p&gt;(2) 사진이 어떤 카테고리에 해당하는지 분석&lt;/p&gt;
+&lt;p&gt;(3) 음악의 내용을 인식해 해당 음악의 정보 자동 서치&lt;/p&gt;
+&lt;p&gt;(4) 비디오의 해당 내용을 자동으로 분석해 요약 정보 제공&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;빅데이터-특성---3vs&#34;&gt;빅데이터 특성 - 3Vs&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;1. Volume - 데이터의 양&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;2014 -2016까지 만들어내는 데이터의 양은 1 zettabyte&lt;/p&gt;
+&lt;p&gt;1 zettabyte = 10^21&lt;/p&gt;
+&lt;p&gt;그만큼 정말 많은 데이터가 발생하고있다.&lt;/p&gt;
+&lt;p&gt;-&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;2. Variety - 데이터의 종류&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;빅데이터 이전의 시대에는 데이터 자체의 구조가 잘 갖추어진 &lt;code&gt;structured data&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;현재는 앞서 말한 것 뿐만 아니라 자유 형태의 텍스트, 이미지, 오디오, 비디오 등 다양한 형태를 다 다룬다.&lt;/p&gt;
+&lt;p&gt;예시&lt;/p&gt;
+&lt;p&gt;Website traffic : 사용자들이 접속했을 때의 로그 정보 (텍스트 형태)&lt;/p&gt;
+&lt;p&gt;Purchase trasactions : 물건을 구입하는 등의 정보 (structured data 형태)&lt;/p&gt;
+&lt;p&gt;Faceboook friends : 페이스북의 친구 관계&lt;/p&gt;
+&lt;p&gt;Youtube video : 유튜브 같은 사이트 등에서 비디오 형태의 데이터 사용&lt;/p&gt;
+&lt;p&gt;-&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;3. Velocity - 데이터가 빠르게 발생함&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;예시&lt;/p&gt;
+&lt;p&gt;매 60초마다 페이스북에 51만 건의 코멘트가 올라간다.&lt;/p&gt;
+&lt;p&gt;그만큼 빠르게 데이터가 생성된다.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+        </item>
+        <item>
         <title>5097. 회전</title>
         <link>https://quipu1.github.io/p/5097.-%ED%9A%8C%EC%A0%84/</link>
         <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
